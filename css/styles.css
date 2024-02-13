@@ -218,6 +218,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
+transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .studio-elements::after {
@@ -252,6 +253,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
+transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-order-service:hover,
 .button-order-service:focus {
@@ -320,6 +322,36 @@ text-transform: capitalize;
 margin-bottom: 72px;
 
 }
+
+.icon-portfolio-total-container{
+    position: relative;
+overflow: hidden;
+}
+.icon-portfolio-container {
+    background: #4D5AE5;
+    width: 360px;
+height: 300px;
+flex-shrink: 0;
+position: absolute;
+top: 0;
+transform: translateY(100%);
+transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-portfolio-img:hover .icon-portfolio-container{
+    transform: translateY(0);
+}
+.icon-text-portfolio {
+    color:#F4F4FD;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.32px;
+padding-top: 40px;
+padding-left: 32px;
+padding-right: 32px;
+}
 .icon-item-team {
     width: 40px;
     height: 40px;
@@ -348,6 +380,7 @@ margin-bottom: 72px;
 }
 .icon-link-team:hover {
     background-color: #31D0AA;
+    transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-portfolio {
 display: flex;
@@ -414,7 +447,9 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.32px;
-display: flex;
+margin-left: 10px;
+
+
 }
 
 .icon-list-footer {
@@ -423,10 +458,13 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 120px;
+    margin-top: 16px;
+    gap: 16px;
 
 }
-.
-.icon-item-footer{
+
+.icon-item-footer { 
     width: 40px;
     height: 40px;
 }
@@ -438,10 +476,23 @@ display: flex;
     justify-content: center;
     background-color:#4D5AE5;
     border-radius: 50%;
-    margin-top: 12px;
-}
+    flex-shrink: 0;
 
+}
+.icon-link-footer:hover {
+    background-color: #31D0AA;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 .icon-icon-footer {
-    width: 18px;
+    width: 40px;
     height: 18px;
+}
+.container-two {
+display: flex;
+gap: 120px;
+}
+.social-footer-container{
+    display: block;
+    text-align: center;
 }
