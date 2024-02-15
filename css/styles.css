@@ -28,11 +28,12 @@ ul{
 .haeder {
     background-color: #FFF;
     border-bottom: 1px solid #e7e9fc;
-    
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 .header-container{
     display: flex;
     align-items: center;
+   
     
 }
 .nav-container{
@@ -63,6 +64,9 @@ ul{
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office\ 1-min.png);
     background-size: 100%;
     background-repeat: no-repeat;
+   max-width: 1440px;
+   background-position: center;
+   background-size: cover;
    
 }
 .container-hero {
@@ -97,6 +101,7 @@ text-align: center;
     border-radius: 4px;
     display: block;
     margin-left: 480px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .strategy-backgroud{ background-color:  #FFF;
     padding-top: 120px;
@@ -118,19 +123,12 @@ text-align: center;
     display: flex;
 justify-content: center;
 gap: 24px;
-}
-.icon-item {
-    display: flex;
-    justify-content: center;
-    border-radius: 4px;
-border: 1px solid var(--LIGHT-SLATE, #8E8F99);
-background: var(--CLOUD, #F4F4FD);
-width: 264px;
 height: 112px;
-flex-shrink: 0;
+background-color:#F4F4FD;
+border-radius: 4px;
 margin-bottom: 8px;
-align-items: center;
 }
+
 .section-two-list{
     display: flex;
 gap: 24px;
@@ -221,8 +219,17 @@ letter-spacing: 0.32px;
 transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.studio-elements {
+    position: relative; 
+    color: #404bbf; 
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .studio-elements::after {
     content:"";
+    position: absolute; 
+    color: #404bbf;
+    left: 0;
+    bottom: -1px; 
     width: 48px;
 height: 4px;
 flex-shrink: 0;
@@ -241,6 +248,7 @@ align-items: center;
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
+    transition:  cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
