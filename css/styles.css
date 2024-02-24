@@ -332,25 +332,18 @@ margin-bottom: 72px;
 
 }
 
-.icon-portfolio-total-container{
+.icon-portfolio-container {
     position: relative;
 overflow: hidden;
 }
-.icon-portfolio-container {
-    background: #4D5AE5;
+.icon-text-portfolio{
+    background-color: #4D5AE5;
     width: 360px;
 height: 300px;
 flex-shrink: 0;
 position: absolute;
 top: 0;
-transform: translateY(100%);
-transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list-portfolio-img:hover .icon-portfolio-container{
-    transform: translateY(0);
-}
-.icon-text-portfolio {
-    color:#F4F4FD;
+color:#F4F4FD;
 font-family: Roboto;
 font-size: 16px;
 font-style: normal;
@@ -360,6 +353,11 @@ letter-spacing: 0.32px;
 padding-top: 40px;
 padding-left: 32px;
 padding-right: 32px;
+transform: translateY(100%);
+transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-portfolio-img:hover .icon-text-portfolio{
+    transform: translateY(0);
 }
 .icon-item-team {
     width: 40px;
