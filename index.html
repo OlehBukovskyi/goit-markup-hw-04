@@ -371,22 +371,38 @@
         <div class="modal-total">
         <p class="p-laave">Leave your contacts and we will call you back</p>
         <form action="" class="form-form">
-            <label for="name" class="label-name">Name
-                <div class="modal-icone">
+            <label for="name" class="modal-label">Name
+                <span class="modal-input-wrap">
                 <input type="name" class="form-input"/>
-                <svg class="icon-form" width="18px" height="18px">
+                <svg class="modal-icon" width="18px" height="18px">
                     <use class="link-icon-name" href="./images/icons.svg#icon-person-black-18dp-1-2"></use>
                 </svg>
-            </div>
+            </span>
         </label>
-                <label for="Phone" class="label-phone">Phone
-                    <input type="number" class="form-input"/></label>
-                    <label for="gmail" class="label-gmail">Email
-                        <input type="gmail" class="form-input"/></label>
-                        <label class="label-comment">Comment
+                <label for="Phone" class="modal-label">Phone
+                    <span class="modal-input-wrap">
+                    <input type="tel" class="form-input"/>
+                    <svg class="modal-icon" width="18px" height="24px">
+                        <use class="link-icon-name" href="./images/icons.svg#icon-phone-black-18dp-1-2"></use>
+                    </svg>
+                </span>
+            </label>
+                
+                    <label for="gmail" class="modal-label">Email
+                        <span class="modal-input-wrap">
+                        <input type="email" class="form-input"/>
+                        <svg class="modal-icon" width="18px" height="24px">
+                            <use class="link-icon-name" href="./images/icons.svg#icon-email-black-18dp-1-2"></use>
+                        </svg>
+                    </span>
+                </label>
+                        <label class="modal-label">Comment
                         <textarea name="Comment" class="form-comment" placeholder="Text input"></textarea></label>
-                       <label >
-                    <input type="checkbox" class="form-checkbox" > <p class="p-accept">I accept the terms and conditions of the <span class="privacy-policy-link"> Privacy Policy</span></p></label>
+                       
+                        <div class="modal-field">
+                    <input type="checkbox" class="form-checkbox" name="privacy" required/> 
+                    <label for="privacy" class="text-accept"> <span class="checkbox-fake"></span> I accept the terms and conditions of the  <a href="" class="privacy-policy-link"> Privacy Policy</a>
+                    </label></div>
                        
 
                 <button class="form-button" type="submit">Send</button>

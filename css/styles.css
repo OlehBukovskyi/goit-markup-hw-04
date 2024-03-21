@@ -621,6 +621,8 @@ flex-shrink: 0;
     width: 360px;
     height: 24px;
     margin-left: 24px;
+    margin-top: 64px;
+    margin-bottom: 28px;
     color: #2E2F42;
 text-align: center;
 font-family: "Roboto", sans-serif;
@@ -630,19 +632,7 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.32px;
 }  
-.label-name{
-   margin-left: 24px;
-   color:#8E8F99;
-font-family: "Roboto", sans-serif;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 0.48px;
-margin-top: 28px;
-
-}
-.label-phone{
+.modal-label{
     margin-left: 24px;
     margin-top: 8px;
     color:#8E8F99;
@@ -653,22 +643,12 @@ font-weight: 400;
 line-height: 14px; 
 letter-spacing: 0.48px;
 }
-.label-gmail{
-    margin-left: 24px;
-    margin-top:24px;
-    color:#8E8F99;
-font-family: "Roboto", sans-serif;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 14px; 
-letter-spacing: 0.48px;
-margin-top: 8px;
-}
 .form-input{
     width: 360px;
     height: 40px;
-    margin-bottom: 8px;
+    margin-top: 4px;
+    padding-left: 38px;
+    outline: none;
     color:#8E8F99;
 font-family: "Roboto", sans-serif;
 font-size: 12px;
@@ -682,20 +662,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .form-input:focus {
-    
-border: 1px solid var(--IRIS, #4D5AE5);
-}
-.label-comment {
-    margin-left: 24px;
-    margin-top:24px;
-    margin-top: 8px;
-    color:#8E8F99;
-font-family: "Roboto", sans-serif;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 14px; 
-letter-spacing: 0.48px;
+border: 1px solid #4D5AE5;
 }
 .form-checkbox{
     width: 16px;
@@ -704,13 +671,12 @@ letter-spacing: 0.48px;
     margin-top: 4px;
     display: flex;
     position: fixed;
+    
 
 }
-.p-accept{
+.text-accept{
     width: 360px;
     height: 16px;
-    margin-left: 42,5px;
-    margin-top: 4px;
 color:  #8E8F99;
 font-family: Roboto;
 font-size: 12px;
@@ -718,7 +684,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 14px; 
 letter-spacing: 0.48px;
-text-align:right;
+display: flex;
 
 }
 .privacy-policy-link{
@@ -730,6 +696,7 @@ font-weight: 400;
 line-height: 16px;
 letter-spacing: 0.48px;
 text-decoration-line: underline;
+margin-left: 2px;
 
 
 }
@@ -750,24 +717,40 @@ text-decoration-line: underline;
 .form-comment {
     width: 360px;
     height: 120px;
-    margin-top: 8px;
+    margin-top: 4px;
     margin-left: 20,5%;
     border-radius: 4px;
 border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 resize: none;
+outline: none;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.icon-form {
-    position: absolute;
-    fill: #2E2F42;
-    left: 36px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    
-    
+.form-comment:focus{
+    border-color:#4D5AE5;
+}
+.modal-input-wrap {
+    position: relative;
 
 }
 .modal-icon{
-    position: relative;
+    position: absolute;
+    fill: #2E2F42;
+    left: 16px;
+    top: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus + .modal-icon {
+fill: #4D5AE5;
+}
+.checkbox-fake{
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 2px solid  #2E2F4266;
+}
+.modal-field{
 }
