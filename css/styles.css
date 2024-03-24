@@ -520,25 +520,13 @@ align-items: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
+    margin-left: 24px;
 }
 .form-general{
     display: flex;
     gap: 24px;
 }
-.label-form {
-   display: flex;
-   flex-direction: column;
-    color: #FFF;
-    font-family: "Roboto", sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.32px;
-margin-bottom: 16px;
-margin-right: 20px;
-justify-content: center;
-}
+
 .input-form-footer{
     width: 264px; 
     height: 40px;
@@ -551,8 +539,14 @@ justify-content: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     border-radius: 4px; 
     color: #ffffff;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+    .input-form-footer:focus{
+        border-color: #4D5AE5;
+    }
+    
 .input-for::placeholder{
     color: #ffffff; }
 .btc-form {
@@ -806,9 +800,3 @@ fill: #4D5AE5;
     left: 50%;
     transform: translate(-50%,-50%);
 } 
-.input-form-footer{
-outline: none;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-.input-form-footer:focus{
-    border-color: #4D5AE5;
-}
