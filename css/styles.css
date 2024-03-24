@@ -161,7 +161,7 @@ gap: 24px;
     gap: 24px;
 }
 .our-portfolio-background { 
-    background-color: "#fff";
+    background-color: "#ffffff";
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -554,7 +554,7 @@ justify-content: center;
 
 }
 .input-for::placeholder{
-    color #ffffff; }
+    color: #ffffff; }
 .btc-form {
     margin-left: 24px;
     height: 40px; 
@@ -573,6 +573,11 @@ letter-spacing: 0.04em;
 color: #fff;
 font-family: "Roboto", sans-serif;
 cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btc-form:hover,
+.btc-form:focus{
+    background-color: #404bbf;
 }
 .icon-form-footer{
     margin-left: 16px;
@@ -586,7 +591,6 @@ cursor: pointer;
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
-    position: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 }
 /* .is-open {
@@ -745,7 +749,7 @@ margin-left: 2px;
     border-radius: 4px;
     border: 1px solid black;
     margin-top: 24px;
-    margin-right: 125,5px;
+    margin-right: 125px;
     margin-bottom: 32px;
 
 }
@@ -753,7 +757,7 @@ margin-left: 2px;
     width: 360px;
     height: 120px;
     margin-top: 4px;
-    margin-left: 20,5%;
+    margin-left: 20px;
     border-radius: 4px;
 border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 resize: none;
@@ -801,4 +805,10 @@ fill: #4D5AE5;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+} 
+.input-form-footer{
+outline: none;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.input-form-footer:focus{
+    border-color: #4D5AE5;
 }
