@@ -803,8 +803,8 @@ border-color:#4D5AE5;
 fill: #4D5AE5;
 }
 .checkbox-fake {
-    display: inline-flex;
     width: 16px; 
+    display: inline-flex;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -828,5 +828,8 @@ fill: #4D5AE5;
     margin-bottom: 24px;
 }
 .div-form{
+    margin-bottom: 8px;
+}
+.div-form-comment{
     margin-bottom: 16px;
 }
