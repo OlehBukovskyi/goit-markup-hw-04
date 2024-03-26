@@ -711,10 +711,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.17; 
 letter-spacing: 0.04em;
-display: flex;
-align-items: center;
-justify-content: center;
-
+margin-top: 16px;
 
 
 }
@@ -825,6 +822,7 @@ fill: #4D5AE5;
 } 
 .modal-field{
     margin-bottom: 24px;
+text-align: center;
 }
 .div-form{
     margin-bottom: 8px;
